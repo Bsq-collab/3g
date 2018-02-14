@@ -2,10 +2,18 @@ import math
 
 
 def print_matrix( matrix ):
+    print matrix;
     pass
 
 def ident( matrix ):
-    pass
+    for row in range(4):
+        for col in range(4):
+            if row=col:
+                matrix[row][col]=1
+            else:
+                matrix[row][col]=0
+    return matrix
+        
 
 #m1 * m2 -> m2
 def matrix_mult( m1, m2 ):
